@@ -71,6 +71,56 @@ var isDragging = false
 var lastDragValue = 0;
 
 
+// Mobile Touches
+window.addEventListener("touchmove", (event) => {
+
+    if(isDragging == false) return
+
+
+    var delta = lastDragValue - event.touches[0].screenX
+
+    if(lastDragValue > event.touches[0].screenX){
+        dragValue = -delta
+    }
+    else {
+        dragValue = -delta
+    }
+
+    var scrollerWidth = horizontalScroller.clientWidth
+
+    var offsets = horizontalScroller.getBoundingClientRect();
+    var left = offsets.left
+
+    if(left < -(scrollerWidth / 2)) 
+    {
+        left = -(scrollerWidth / 2)
+    }
+    else if(left > scrollerWidth / 2)
+    {
+        left = scrollerWidth / 2
+    }
+
+    horizontalScroller.style.left = left + dragValue + "px"
+
+    lastDragValue = event.touches[0].screenX
+
+})
+
+window.addEventListener("touchstart", (event) => {
+    if(horizontalScroller.contains(event.target)){
+        isDragging = true
+        dragValue = 0
+        lastDragValue = event.touches[0].screenX
+    }
+})
+
+window.addEventListener("touchend", (event) => {
+    isDragging = false
+})
+
+
+
+
 
 window.addEventListener("mousemove", (event) => {
 
