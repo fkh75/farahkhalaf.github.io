@@ -1,0 +1,55 @@
+@media only screen and (max-width: 767px){
+    #burger-button {
+        display: block;
+    }
+
+    #desktop-menu {
+        display: none;
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .profile-picture {
+        margin: auto;
+        width: 90%;
+        margin-bottom: 100px
+    }
+
+    .h1Title, .h2Title, .pCustume {
+        text-align: center;
+    }
+
+    #horizontal-scroll-container {
+        display: block;
+    }
+
+    #horizontal-container {
+        display: none;
+    }
+
+    .gallery-container {
+        padding: 0;
+    }
+
+    .gallery-item {
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .profile-picture {
+        margin: auto;
+        width: 100%;
+        margin-bottom: 50px
+    }
+}
+
+@media only screen and (min-width: 501px) and (max-width: 767px) {
+    .profile-picture {
+        margin: auto;
+        width: 40%;
+        margin-bottom: 30px
+    }
+}
