@@ -165,18 +165,19 @@ ul {
 }
 
 
-Css
-
 .wrapper-titles{
   display: flex;
-  margin: 0px;
+
 }
+
 .wrapper-titles .static-txt{
   color: #fff;
   font-size: 30px;
   font-weight: 400;
   margin-top: 4px;
 }
+
+
 .wrapper-titles .dynamic-txts{
   margin-left: 15px;
   height: 45px;
@@ -196,11 +197,14 @@ Css
   overflow: hidden;
 
 }
+
+
 @keyframes slide {
   100%{
     top: -360px;
   }
 }
+
 .dynamic-txts li span{
   position: relative;
   margin: 5px 0;
@@ -245,10 +249,22 @@ Css
 .pCustume {
     color: #fff;
     margin: 0;
-    font-size: 14px;
+    font-size: 20px;
     font-weight: 100;
     padding-top: 1em;
     text-align: left;
+}
+
+#myBtn {
+  color:#FFC815;
+  background-color: #000;
+  margin-top: 5px;
+  border: none;
+  padding-left: 0px;
+  font-weight: 5000;
+  font-size: 20px;
+  text-decoration: underline;
+  
 }
 
 .container-sub-fluid {
