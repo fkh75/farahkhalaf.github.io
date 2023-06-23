@@ -165,6 +165,66 @@ ul {
 }
 
 
+Css
+
+.wrapper-titles{
+  display: flex;
+  margin: 0px;
+}
+.wrapper-titles .static-txt{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 400;
+  margin-top: 4px;
+}
+.wrapper-titles .dynamic-txts{
+  margin-left: 15px;
+  height: 45px;
+  line-height: 45px;
+  overflow: hidden;
+  
+
+}
+.dynamic-txts li{
+  list-style: none;
+  color: #FFC815;
+  font-size: 30px;
+  font-weight: 250;
+  position: relative;
+  top: 0;
+  animation: slide 24s steps(8) infinite;
+  overflow: hidden;
+
+}
+@keyframes slide {
+  100%{
+    top: -360px;
+  }
+}
+.dynamic-txts li span{
+  position: relative;
+  margin: 5px 0;
+  line-height: 45px;
+}
+.dynamic-txts li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000;
+  border-left: 2px solid #FFC815;
+  animation: typing 3s steps(10) infinite;
+}
+@keyframes typing {
+  40%, 60%{
+    left: calc(100% + 30px);
+  }
+  100%{
+    left: 0;
+  }
+}
+
 
 .h1Title {
     color: #fff;
