@@ -174,7 +174,6 @@ ul {
   color: #fff;
   font-size: 30px;
   font-weight: 400;
-  margin-top: 4px;
 }
 
 
@@ -199,6 +198,7 @@ ul {
 }
 
 
+
 @keyframes slide {
   100%{
     top: -360px;
@@ -220,12 +220,23 @@ ul {
   border-left: 2px solid #FFC815;
   animation: typing 3s steps(10) infinite;
 }
+
 @keyframes typing {
   40%, 60%{
     left: calc(100% + 30px);
   }
   100%{
     left: 0;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+   .wrapper-titles  {
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    font-size: small;
   }
 }
 
@@ -244,6 +255,7 @@ ul {
     font-size: 18px;
     font-weight: 200;
     padding-top: o;
+    text-align: left;
 }
 
 .pCustume {
@@ -252,9 +264,15 @@ ul {
     font-size: 20px;
     font-weight: 100;
     padding-top: 1em;
-    text-align: left;
+    text-align: justify;
+    text-justify: inter-word;
+    
 }
+
 #more {display: none;}
+
+
+
 
 #myBtn {
   color:#FFC815;
@@ -266,6 +284,29 @@ ul {
   font-size: 20px;
   text-decoration: underline;
   
+}
+
+
+@media screen and (max-width: 800px) {
+  
+  #myBtn {
+    text-align: justify !important; 
+    margin: auto;
+    
+  }
+
+  .pCustume {
+   
+    text-align: justify !important;
+    text-justify: inter-word;
+    }
+
+
+    .h2Title {
+      text-align: left !important;
+  }
+
+    
 }
 
 .container-sub-fluid {
@@ -355,6 +396,9 @@ ul {
   .gallery-item img {
     width: 100%;
   }
+
+
+  
 
 
 

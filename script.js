@@ -187,6 +187,9 @@ window.addEventListener("mouseup", (event) => {
 })
 
 
+
+
+
 $('.gallery-container').click(function(){
     $('.gallery-container').removeClass('active');
     $(this).addClass('active');
