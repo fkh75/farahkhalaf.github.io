@@ -233,9 +233,9 @@ ul {
 
 @media screen and (max-width: 700px) {
    .wrapper-titles  {
-    align-items: center;
+    align-items: left;
     margin: auto;
-    justify-content: center;
+    justify-content: left;
     font-size: small;
   }
 }
@@ -290,7 +290,6 @@ ul {
 @media screen and (max-width: 800px) {
   
   #myBtn {
-    text-align: justify !important; 
     margin: auto;
     
   }
